@@ -1,0 +1,45 @@
+.container {
+  display: grid;
+  grid-auto-rows: minmax(250px, auto);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  grid-gap: 15px;
+}
+
+.elemento {
+  min-width: 250px;
+  background-color: #f7ecee;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.elemento img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.description {
+  background-color: #ffffff;
+  border-radius: 5px;
+  text-align: justify;
+}
+
+.elemento h2 {
+  color: white;
+  background-color: #e2c3c6;
+  border-radius: 5px;
+}
+
+.elemento .type {
+  font-weight: bold;
+  text-align: right;
+  background: none;
+  margin-top: 0px;
+}
+
+.titulo {
+  text-align: center;
+  color: #657275;
+
+}

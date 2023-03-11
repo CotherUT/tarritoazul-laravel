@@ -1,0 +1,10 @@
+.informacion_contacto{
+    display: flex;
+    justify-content: space-evenly;
+}
+.informacion_contacto img{
+    width: 100px;
+}
+.informacion_contacto div{
+    width: 300px;
+}
