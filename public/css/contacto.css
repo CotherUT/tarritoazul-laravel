@@ -1,0 +1,26 @@
+.informacion_contacto{
+    display: flex;
+    justify-content: space-evenly;
+}
+.informacion_contacto img{
+    width: 100px;
+}
+.informacion_contacto div{
+    width: 300px;
+}
+
+body {
+    text-align: center;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: gray;
+}
+
+.center {
+    margin: auto;
+    width: 95%;
+    padding: 10px;
+}
