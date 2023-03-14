@@ -26,10 +26,10 @@
 		</div>
 		<div class="menu">
 			<ul>
-				<li><a href="index.html" id="">Tarrito Azúl</a></li>
-				<li><a href="index.html" id="">Inicio</a></li>
-				<li><a href="contacto.html" id="">Contacto</a></li>
-				<li><a href="FAQ.html" id="">FAQs</a></li>
+				<li><a href="/" id="">Tarrito Azúl</a></li>
+				<li><a href="/" id="">Inicio</a></li>
+				<li><a href="/Contactanos" id="">Contacto</a></li>
+				<li><a href="/FAQ" id="">FAQs</a></li>
 			</ul>
 		</div>
 		</nav>
