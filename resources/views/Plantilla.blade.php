@@ -30,6 +30,8 @@
 				<li><a href="/" id="">Inicio</a></li>
 				<li><a href="/Contactanos" id="">Contacto</a></li>
 				<li><a href="/FAQ" id="">FAQs</a></li>
+				<li><a href="/Registro" id="">FAQs</a></li>
+				<li><a href="/Login" id="">FAQs</a></li>
 			</ul>
 		</div>
 		</nav>
