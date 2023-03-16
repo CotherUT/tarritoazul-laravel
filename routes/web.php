@@ -22,3 +22,27 @@ Route::get('/FAQ', function () {
 Route::get('/Contactanos', function () {
     return view('Contactanos');
 });
+
+// Route::get('/Registro', function () {
+//     return view('User/Registro');
+// })->name('Registro');
+
+// Route::get('/Login', function () {
+//     return view('User/Login');
+// })->name('Login');
+
+Route::get('/Registro', 'App\Http\Controllers\RegistroController')
+->name('Registro');
+
+//Cambiar el nombre del controller a "MensajeController"//
+Route::post('Registro', 'App\Http\Controllers\ControllerMensaje@store');
+
+Route::get('/Login', 'App\Http\Controllers\LoginController')
+ ->name('Login');
+
+ //Cambiar el nombre del controller a "MensajeController"//
+ Route::post('Login', 'App\Http\Controllers\ControllerMensaje@store');
+
+
+
+
