@@ -1,31 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 
-*{
-	margin: 0;
-	padding: 0;
-
+:root {
+    --tarrito: #a1c4c6;
+    /* Primario */
+    --color1: #af88b1;
+    /* Secundario */
+    --color2: #79a9ac;
+    /* Advertencia */
+    --color3: #c7b69c;
+    /* Exito */
+    --color4: #5cb83a;
+    --color5: #f8f9f9;
+    /* Peligro */
+    --color6: #f54b4b;
 }
-body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+
+* {
     font-family: 'Nunito Sans', sans-serif;
 }
-section{
-	margin-left: 20px;
-	margin-right: 20px;
-}
-footer{
-    margin-top: auto;
+
+#banner {
+    text-align: center;
+    background-color: #a1c4c6;
 }
 
-h1{
-	color: rgb(23, 23, 23);
+#content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-h2,h3,h4,h5,h6{
-	color: darkslategray;
-	text-shadow: 2px 2px 8px rgba(0,0,0,0.16);
-	margin-top: 20px;
-	margin-bottom: 5px;
+#banner .logo {
+    width: 200px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bgGradient, #content {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 47%, rgba(206,241,244,1) 87%);
+    background-attachment: fixed;
+}
+
+/*Botones---------------------------------------------*/
+
+.btn {
+    color: black;
+    font-size: medium;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.btn-primario {
+    color: white;
+    background-color: var(--color1);
+}
+
+.btn-secundario {
+    color: white;
+    background-color: var(--color2);
+}
+
+.btn-advertencia {
+    color: white;
+    background-color: var(--color3);
+}
+
+.btn-peligro {
+    color: white;
+    background-color: var(--color6);
+}
+
+.btn-exito {
+    color: white;
+    background-color: var(--color4);
+}
+
+.btn-outline-primario {
+    color: var(--color1);
+    border-color: var(--color1);
+    background-color: transparent;
+    border: 2px;
+    padding: 8px 18px;
+    border-style: solid;
+}
+
+.btn-outline-secundario {
+    color: var(--color2);
+    border-color: var(--color2);
+    background-color: transparent;
+    border: 2px;
+    padding: 8px 18px;
+    border-style: solid;
+}
+
+.btn-outline-exito {
+    color: var(--color4);
+    border-color: var(--color4);
+    background-color: transparent;
+    border: 2px;
+    padding: 8px 18px;
+    border-style: solid;
+}
+
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+input[type=file]::-webkit-file-upload-button {
+    font-size: medium;
+    border: none;
+    color: white;
+    background-color: var(--color2); /* Green */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 10px;
+    width: 100%;
+    bottom: 0px;
+    background-color: var(--tarrito);
+    color: white;
+    text-align: center;
+}
+
+body {
+    min-height: 1080px;
 }
