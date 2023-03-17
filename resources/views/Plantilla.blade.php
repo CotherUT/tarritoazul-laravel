@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="{{ asset('css/header.css') }}" rel="stylesheet">
 	<link href="{{ asset('css/footer.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/global.css') }}" rel="stylesheet">
+
 
     <title>@yield ('Titulo')</title>
 
