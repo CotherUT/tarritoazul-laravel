@@ -25,21 +25,26 @@
 
                 <div class="cantidad">
                     <p>Cantidad:</p>
-                    <input ID="tbCantidad"  class="input" TextMode="Number" Text="1"></input>
+                    <input type="number" ID="tbCantidad"  class="input" TextMode="Number" Text="1"></input>
                 </div>
 
                 <div class="disponibilidad">
                     <p>Disponibilidad:</p>
-                    <asp:DropDownList ID="ddlDisponibilidad"  class="input">
-                        <asp:ListItem id="liDisponible"  Text="Disponible"></asp:ListItem>
-                        <asp:ListItem id="liAgotado"  Text="Agotado"></asp:ListItem>
-                        <asp:ListItem id="liOculto"  Text="Oculto"></asp:ListItem>
-                    </asp:DropDownList>
+                    <select name="ddlCategoria" id="ddlCategoria">
+                        <option value="Disponible">Disponible</option>
+                        <option value="Agotado">Agotado</option>
+                        <option value="Oculto">Oculto</option>
+                    </select>
                 </div>
 
                 <div class="categoria">
                     <p>Categoria:</p>
-                    <asp:DropDownList ID="ddlCategoria"  class="input" DataSourceID="CategoriasConnectionString" DataTextField="nombre" DataValueField="id_categoria"></asp:DropDownList>
+                    <select name="ddlCategoria" id="ddlCategoria">
+                        <option value="Arete">Arete</option>
+                        <option value="Pulcera">Pulcera</option>
+                        <option value="Collar">Collar</option>
+                        <option value="Llavero">Llavero</option>
+                    </select>
                 </div>
 
                 <div class="etiquetas">
@@ -49,7 +54,7 @@
             </div>
             <div class="file_up">
                 <h2 class="titulo">Imagenes</h2>
-                <asp:FileUpload ID="FileUpload_Control"  AllowMultiple="true" />
+                <input type="file" ID="FileUpload_Control"  AllowMultiple="true" />
                 <br />
                 <asp:Label ID="FileUpload_Msg"  Text=""></asp:Label>
             </div>
