@@ -1,14 +1,14 @@
 @extends('Plantilla')
 @section('Contenido')
-<form method="post" action="{{route('Registro')}}">
+<form method="post" action="{{route('Registro.store')}}">
 	@csrf
 	<h1>Crear una cuenta</h1>
 		<div>
-			Nombre de usuario:<br><br><input type="textbox" name="Nombre"><br>
+			Nombre de usuario:<br><br><input type="textbox" name="tbNombre"><br>
 			{!! $errors->first('NombreUsuario','<small>:message</small><br>')!!}
 		</div>
 		<div>
-			Email:<br><br><input name="Email"><br>
+			Email:<br><br><input name="tbEmail"><br>
 			{!! $errors->first('Email','<small>:message</small><br>')!!}
 		</div>
 		<div>
@@ -16,7 +16,7 @@
 			{!! $errors->first('ConfirmarEmail','<small>:message</small><br>')!!}
 		</div>
 		<div>
-			Contraseña:<br><br><input type="password" name="Contraseña"><br>
+			Contraseña:<br><br><input type="passwod" name="tbPassword"><br>
 			{!! $errors->first('Contraseña','<small>:message</small><br>')!!}
 		</div>
 		<div>
@@ -28,7 +28,8 @@
 		<br>
 		<input type="checkbox" name="Check">Acepto las condiciones de uso y el aviso de privacidad
 		<div>
-			<br><br><button>Registrarse</button>
+			<br><br>
+			<button>Registrarse</button>
 		</div>
 		<br>¿Ya tienes una cuenta?<a href="/Login">Inicia sesión aquí</a><br>   
 </form>
