@@ -1,26 +1,31 @@
+<link href="{{ asset('css/registro.css') }}" rel="stylesheet">
 @extends('Plantilla')
 @section('Contenido')
+<section class="registro_box">
+<div class="logo_fondo">
+	<img class="logo" src="{{ asset('imagenes/header/logo.png') }}"/>
+</div>
 <form method="post" action="{{route('Registro.store')}}">
 	@csrf
 	<h1>Crear una cuenta</h1>
 		<div>
-			Nombre de usuario:<br><br><input type="textbox" name="tbNombre"><br>
+			Nombre de usuario:<br><input type="textbox" name="tbNombre"><br>
 			{!! $errors->first('NombreUsuario','<small>:message</small><br>')!!}
 		</div>
 		<div>
-			Email:<br><br><input name="tbEmail"><br>
+			Email:<br><input name="tbEmail"><br>
 			{!! $errors->first('Email','<small>:message</small><br>')!!}
 		</div>
 		<div>
-			Confirmar Email:<br><br><input name="ConfirmarEmail"><br>
+			Confirmar Email:<br><input name="ConfirmarEmail"><br>
 			{!! $errors->first('ConfirmarEmail','<small>:message</small><br>')!!}
 		</div>
 		<div>
-			Contraseña:<br><br><input type="passwod" name="tbPassword"><br>
+			Contraseña:<br><input type="passwod" name="tbPassword"><br>
 			{!! $errors->first('Contraseña','<small>:message</small><br>')!!}
 		</div>
 		<div>
-			Confirmar Contraseña:<br><br> <input type="password" name="ConfirmarContraseña"><br>
+			Confirmar Contraseña:<br> <input type="password" name="ConfirmarContraseña"><br>
 			{!! $errors->first('ConfirmarContraseña','<small>:message</small><br>')!!}
 
 		</div>
@@ -28,10 +33,11 @@
 		<br>
 		<input type="checkbox" name="Check">Acepto las condiciones de uso y el aviso de privacidad
 		<div>
-			<br><br>
-			<button>Registrarse</button>
+			<br>
+			<button class="btn btn-primario">Registrarse</button>
 		</div>
-		<br>¿Ya tienes una cuenta?<a href="/Login">Inicia sesión aquí</a><br>   
+		<br>¿Ya tienes una cuenta?<a href="{{ route('/') }}">Inicia sesión aquí</a><br>   
 </form>
+</section>
 
 @endsection
