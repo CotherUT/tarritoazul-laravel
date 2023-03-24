@@ -1,5 +1,3 @@
-editar
-
 <link href="{{ asset('css/producto.css') }}" rel="stylesheet">
 @extends('Plantilla')
 @section('Contenido')
@@ -7,7 +5,7 @@ editar
         @csrf @method('PATCH')
         <section class="formulario">
             <div class="add_product">
-                <h2 class="titulo">Añadir producto</h2>
+                <h2 class="titulo">Actualizar producto</h2>
                 <div class="item1">
                     <div class="nombre">
                         <p>Nombre:</p>
