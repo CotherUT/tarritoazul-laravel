@@ -33,6 +33,9 @@ Route::get('/Login', 'App\Http\Controllers\LoginController')
 //Cambiar el nombre del controller a "MensajeController"//
 Route::post('Login', 'App\Http\Controllers\ControllerMensaje@store');
 
+//Dashboard -------------------------------
+Route::get('Dashboard', 'App\Http\Controllers\DashboardController@create')->name('Dashboard');
+
 //Producto---------------------------
 Route::get('Producto', 'App\Http\Controllers\ProductoController@create')->name('Producto');
 Route::post('Producto','App\Http\Controllers\ProductoController@store' )->name('Producto.store');
