@@ -33,8 +33,11 @@ Route::get('/Login', 'App\Http\Controllers\LoginController')
 //Cambiar el nombre del controller a "MensajeController"//
 Route::post('Login', 'App\Http\Controllers\ControllerMensaje@store');
 
-Route::get('/Producto', 'App\Http\Controllers\ProductoController');
+//Producto---------------------------
+Route::get('Producto', 'App\Http\Controllers\ProductoController@create')->name('Producto');
+Route::post('Producto','App\Http\Controllers\ProductoController@store' )->name('Producto.store');
 
 //Registro --------------------------------------
 Route::get('Registro', 'App\Http\Controllers\RegistroController@create')->name('Registro');
 Route::post('Registro', 'App\Http\Controllers\RegistroController@store')->name('Registro.store');
+
