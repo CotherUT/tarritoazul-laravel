@@ -1,4 +1,77 @@
-.container {
+/* Catalogo */
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* margin: auto; */
+    text-align: center;
+    border-radius: 3px;
+    min-width: 250px;
+    max-width: 200px;
+    text-align: center;
+}
+
+@media (max-width: 510px) {
+    .card {
+        max-width: 450px;
+        margin: auto;
+    }
+}
+
+.imagen {
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+}
+
+.nombre {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+.price {
+    color: #526768;
+    font-weight: bold;
+}
+
+.boton {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: var(--color1);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 0 0 3px 3px;
+}
+
+.card .descripcion {
+    min-height: 60px;
+}
+
+.card .boton:hover {
+    opacity: 0.7;
+}
+
+.buscarCatalogo {
+    width: 100%;
+    text-align: right;
+    /*    padding: 10rem 3rem 2rem 3rem;*/
+    /*    width: 58%;*/
+    /*    align-items: end;*/
+    margin: 0px 0px 0px auto;
+}
+
+/*.btnBuscarCat{
+    float:left;
+}*/.container {
   display: grid;
   grid-auto-rows: minmax(250px, auto);
   grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));

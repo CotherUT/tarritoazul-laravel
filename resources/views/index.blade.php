@@ -2,86 +2,20 @@
 
 @extends('Plantilla')
 @section('Contenido')
-	<!-- Productos ----------------------------------- -->
-	<section class="container">
-		<div class="elemento">
-			<h2>Gato truste</h2>
-			<p class="type">[RTAP CARD]</p>
-			<img src="{{ asset('imagenes/Gatotruste.jpg') }}" />
-			<p class="description">Puedes activar esta carta cuando tu oponente active una carta trampa en su turno. Si
-				esta
-				carta es activada, aturde al oponente con una sucesion de golpes en el centro oxipital izquierdo</p>
-		</div>
-		<div class="elemento">
-			<h2>Gato truste</h2>
-			<p class="type">[RTAP CARD]</p>
-			<img src="{{ asset('imagenes/Gatotruste.jpg') }}" />
-			<p class="description">Puedes activar esta carta cuando tu oponente active una carta trampa en su turno. Si
-				esta
-				carta es activada, aturde al oponente con una sucesion de golpes en el centro oxipital izquierdo</p>
-		</div>
-		<div class="elemento">
-			<h2>Gato truste</h2>
-			<p class="type">[RTAP CARD]</p>
-			<img src="{{ asset('imagenes/Gatotruste.jpg') }}" />
-			<p class="description">Puedes activar esta carta cuando tu oponente active una carta trampa en su turno. Si
-				esta
-				carta es activada, aturde al oponente con una sucesion de golpes en el centro oxipital izquierdo</p>
-		</div>
-		<div class="elemento">
-			<h2>Gato truste</h2>
-			<p class="type">[RTAP CARD]</p>
-			<img src="{{ asset('imagenes/Gatotruste.jpg') }}" />
-			<p class="description">Puedes activar esta carta cuando tu oponente active una carta trampa en su turno. Si
-				esta
-				carta es activada, aturde al oponente con una sucesion de golpes en el centro oxipital izquierdo</p>
-		</div>
-		<div class="elemento">
-			<h2>Gato truste</h2>
-			<p class="type">[RTAP CARD]</p>
-			<img src="{{ asset('imagenes/Gatotruste.jpg') }}" />
-			<p class="description">Puedes activar esta carta cuando tu oponente active una carta trampa en su turno. Si
-				esta
-				carta es activada, aturde al oponente con una sucesion de golpes en el centro oxipital izquierdo</p>
-		</div>
-		<div class="elemento">
-			<h2>Gato truste</h2>
-			<p class="type">[RTAP CARD]</p>
-			<img src="{{ asset('imagenes/Gatotruste.jpg') }}" />
-			<p class="description">Puedes activar esta carta cuando tu oponente active una carta trampa en su turno. Si
-				esta
-				carta es activada, aturde al oponente con una sucesion de golpes en el centro oxipital izquierdo</p>
-		</div>
-		<div class="elemento">
-			<h2>Gato truste</h2>
-			<p class="type">[RTAP CARD]</p>
-			<img src="{{ asset('imagenes/Gatotruste.jpg') }}" />
-			<p class="description">Puedes activar esta carta cuando tu oponente active una carta trampa en su turno. Si
-				esta
-				carta es activada, aturde al oponente con una sucesion de golpes en el centro oxipital izquierdo</p>
-		</div>
-		<div class="elemento">
-			<h2>Gato truste</h2>
-			<p class="type">[RTAP CARD]</p>
-			<img src="{{ asset('imagenes/Gatotruste.jpg') }}" />
-			<p class="description">Puedes activar esta carta cuando tu oponente active una carta trampa en su turno. Si
-				esta
-				carta es activada, aturde al oponente con una sucesion de golpes en el centro oxipital izquierdo</p>
-		</div>
+    <!-- Productos ----------------------------------- -->
+    <div class="card">
+        <img src="" alt="Denim Jeans" style="width: 100%" />
+        <h1>Waflitos</h1>
+        <p class="price">$299</p>
+        <p class="descripcion">Pack de 4 aretes con forma de wafles con moras y fresas</p>
+        <p>
+            <button>Añadir al carrito</button>
+        </p>
+    </div>
+    </section>
+    <!-- Productos ----------------------------------- -->
+@endsection
 
-		<div class="elemento">
-			<h2>Gato truste</h2>
-			<p class="type">[RTAP CARD]</p>
-			<img src="{{ asset('imagenes/Gatotruste.jpg') }}" />
-			<p class="description">Puedes activar esta carta cuando tu oponente active una carta trampa en su turno. Si
-				esta
-				carta es activada, aturde al oponente con una sucesion de golpes en el centro oxipital izquierdo</p>
-		</div>
-
-	</section>
-	<!-- Productos ----------------------------------- -->
-	@endsection
-	
 </body>
 
 </html>
