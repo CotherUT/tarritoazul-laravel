@@ -64,7 +64,7 @@
 
 
             <div class="botones">
-                <button ID="btnGuardar" class="btn btn-primario btnGuardar" OnClick="btnGuardar_Click" />Guardar</button>
+                <button class="btn btn-primario btnGuardar" OnClick="btnGuardar_Click" />Guardar</button>
             </div>
 
         </section>
