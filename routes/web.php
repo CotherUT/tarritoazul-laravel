@@ -34,11 +34,14 @@ Route::get('/Login', 'App\Http\Controllers\LoginController')
 Route::post('Login', 'App\Http\Controllers\ControllerMensaje@store');
 
 //Dashboard -------------------------------
-Route::get('Dashboard', 'App\Http\Controllers\DashboardController@create')->name('Dashboard');
+Route::get('Dashboard', 'App\Http\Controllers\DashboardController@index')->name('Dashboard.index');
 
 //Producto---------------------------
-Route::get('Producto', 'App\Http\Controllers\ProductoController@create')->name('Producto');
+Route::get('Producto/alta', 'App\Http\Controllers\ProductoController@create')->name('Producto.create');
+Route::get('Producto/{id}/edit','App\Http\Controllers\ProductoController@edit' )->name('Producto.edit');
+Route::patch('Producto/{id}', 'App\Http\Controllers\ProductoController@update')->name('Producto.update');
 Route::post('Producto','App\Http\Controllers\ProductoController@store' )->name('Producto.store');
+Route::get('Producto/{id}', 'App\Http\Controllers\ProductoController@destroy')->name('Producto.destroy');
 
 //Registro --------------------------------------
 Route::get('Registro', 'App\Http\Controllers\RegistroController@create')->name('Registro');

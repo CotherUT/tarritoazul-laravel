@@ -20,7 +20,7 @@
 			<nav id="div_nav">
 				<ul>
 					<li><a href="/Carrito">🛒Carrito</a></li>
-					<li><a href="{{ route('Dashboard') }}">Administrar</a></li>
+					<li><a href="{{ route('Dashboard.index') }}">Administrar</a></li>
 					<li><img src="{{ asset('imagenes/header/logosmall.png') }}" class="avatar"></li>
 					<!--Aqui va la foto de perfil del usuario-->
 					<li>Nombre</li> <!--Aqui va el nombre del usuario-->

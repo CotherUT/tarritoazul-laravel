@@ -12,7 +12,7 @@ class ProductoController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**
@@ -20,7 +20,7 @@ class ProductoController extends Controller
      */
     public function create()
     {
-        return view('Admin.Producto');
+        return view('Admin.Producto.alta');
     }
 
     /**
@@ -46,7 +46,8 @@ class ProductoController extends Controller
      */
     public function show(string $id)
     {
-        //
+        //Hacer consultas de informacion
+        return View('Producto.show', ['i'=>Producto::findorFail($id)]);
     }
 
     /**
@@ -54,7 +55,9 @@ class ProductoController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        //obtener el valor desde la bd en la migracion
+        $i = Producto::findorFail($id);
+        return view('Admin.Producto.edit', compact('i'));
     }
 
     /**
@@ -62,7 +65,17 @@ class ProductoController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $i=Producto::findorFail($id);
+        $i->nombre=$request->tbNombre;
+        $i->descripcion=$request->tbDescripcion;
+        $i->precio=$request->tbPrecio;
+        $i->cantidad=$request->tbCantidad;
+        $i->disponibilidad=$request->ddlDisponibilidad;
+        $i->categoria=$request->ddlCategoria;
+        $i->etiquetas=$request->tbEtiquetas;
+        // $i->updated_at=$request->;
+        $i->save();
+        return redirect()->route('Dashboard.index');
     }
 
     /**
@@ -70,6 +83,8 @@ class ProductoController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $i=Producto::findorFail($id);
+        $i->delete();
+        return redirect()->route('Dashboard.index');
     }
 }

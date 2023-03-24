@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Producto;
 
 class DashboardController extends Controller
 {
@@ -11,7 +12,10 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        //
+        //Obtiene una lista de los productos de la BD
+        $var_productos = Producto::get();
+        //Abre la vista Dashboard y le pasa la lista var_productos
+        return view("Admin.Dashboard", compact('var_productos'));
     }
 
     /**
