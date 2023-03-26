@@ -35,7 +35,7 @@
     <div id="map"></div>
 </section>
 <!-- Post de facebook -->
-<section>
+{{-- <section>
     <br>
     <br>
     <br>
@@ -50,9 +50,9 @@
                         href="https://www.facebook.com/profile.php?id=100067099912931">Aretes artesanales</a>
                 </blockquote>
     </div>
-</section>
+</section> --}}
 <!-- Post de twitter -->
-<section>
+{{-- <section>
     <br>
     <br>
     <br>
@@ -64,7 +64,7 @@
             1, 2022</a>
     </blockquote>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</section>
+</section> --}}
 
 <script>
     //Funcion para inicializar y colocar el mapa en la pagina

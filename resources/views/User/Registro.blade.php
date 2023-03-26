@@ -10,11 +10,11 @@
             <h1>Crear una cuenta</h1>
             <div>
                 Nombre de usuario:<br><input type="textbox" name="tbNombre"><br>
-                {!! $errors->first('NombreUsuario', '<small>:message</small><br>') !!}
+                {!! $errors->first('tbNombre', '<small>:message</small><br>') !!}
             </div>
             <div>
                 Email:<br><input name="tbEmail"><br>
-                {!! $errors->first('Email', '<small>:message</small><br>') !!}
+                {!! $errors->first('tbEmail', '<small>:message</small><br>') !!}
             </div>
             <div>
                 Confirmar Email:<br><input name="ConfirmarEmail"><br>
@@ -22,11 +22,11 @@
             </div>
             <div>
                 Contraseña:<br><input type="passwod" name="tbPassword"><br>
-                {!! $errors->first('Contraseña', '<small>:message</small><br>') !!}
+                {!! $errors->first('tbPassword', '<small>:message</small><br>') !!}
             </div>
             <div>
-                Confirmar Contraseña:<br> <input type="password" name="ConfirmarContraseña"><br>
-                {!! $errors->first('ConfirmarContraseña', '<small>:message</small><br>') !!}
+                Confirmar Contraseña:<br> <input type="password" name="tbConfirmarContrasenia"><br>
+                {!! $errors->first('tbConfirmarContrasenia', '<small>:message</small><br>') !!}
 
             </div>
 
