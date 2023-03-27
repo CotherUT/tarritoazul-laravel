@@ -1,87 +1,59 @@
-<link href="{{ asset('css/catalogo.css') }}" rel="stylesheet">
-
 @extends('Plantilla')
+<link href="{{ asset('css/catalogo.css') }}" rel="stylesheet">
 @section('Contenido')
-	<!-- Productos ----------------------------------- -->
-	<section class="container">
-		<div class="elemento">
-			<h2>Gato truste</h2>
-			<p class="type">[RTAP CARD]</p>
-			<img src="{{ asset('imagenes/Gatotruste.jpg') }}" />
-			<p class="description">Puedes activar esta carta cuando tu oponente active una carta trampa en su turno. Si
-				esta
-				carta es activada, aturde al oponente con una sucesion de golpes en el centro oxipital izquierdo</p>
-		</div>
-		<div class="elemento">
-			<h2>Gato truste</h2>
-			<p class="type">[RTAP CARD]</p>
-			<img src="{{ asset('imagenes/Gatotruste.jpg') }}" />
-			<p class="description">Puedes activar esta carta cuando tu oponente active una carta trampa en su turno. Si
-				esta
-				carta es activada, aturde al oponente con una sucesion de golpes en el centro oxipital izquierdo</p>
-		</div>
-		<div class="elemento">
-			<h2>Gato truste</h2>
-			<p class="type">[RTAP CARD]</p>
-			<img src="{{ asset('imagenes/Gatotruste.jpg') }}" />
-			<p class="description">Puedes activar esta carta cuando tu oponente active una carta trampa en su turno. Si
-				esta
-				carta es activada, aturde al oponente con una sucesion de golpes en el centro oxipital izquierdo</p>
-		</div>
-		<div class="elemento">
-			<h2>Gato truste</h2>
-			<p class="type">[RTAP CARD]</p>
-			<img src="{{ asset('imagenes/Gatotruste.jpg') }}" />
-			<p class="description">Puedes activar esta carta cuando tu oponente active una carta trampa en su turno. Si
-				esta
-				carta es activada, aturde al oponente con una sucesion de golpes en el centro oxipital izquierdo</p>
-		</div>
-		<div class="elemento">
-			<h2>Gato truste</h2>
-			<p class="type">[RTAP CARD]</p>
-			<img src="{{ asset('imagenes/Gatotruste.jpg') }}" />
-			<p class="description">Puedes activar esta carta cuando tu oponente active una carta trampa en su turno. Si
-				esta
-				carta es activada, aturde al oponente con una sucesion de golpes en el centro oxipital izquierdo</p>
-		</div>
-		<div class="elemento">
-			<h2>Gato truste</h2>
-			<p class="type">[RTAP CARD]</p>
-			<img src="{{ asset('imagenes/Gatotruste.jpg') }}" />
-			<p class="description">Puedes activar esta carta cuando tu oponente active una carta trampa en su turno. Si
-				esta
-				carta es activada, aturde al oponente con una sucesion de golpes en el centro oxipital izquierdo</p>
-		</div>
-		<div class="elemento">
-			<h2>Gato truste</h2>
-			<p class="type">[RTAP CARD]</p>
-			<img src="{{ asset('imagenes/Gatotruste.jpg') }}" />
-			<p class="description">Puedes activar esta carta cuando tu oponente active una carta trampa en su turno. Si
-				esta
-				carta es activada, aturde al oponente con una sucesion de golpes en el centro oxipital izquierdo</p>
-		</div>
-		<div class="elemento">
-			<h2>Gato truste</h2>
-			<p class="type">[RTAP CARD]</p>
-			<img src="{{ asset('imagenes/Gatotruste.jpg') }}" />
-			<p class="description">Puedes activar esta carta cuando tu oponente active una carta trampa en su turno. Si
-				esta
-				carta es activada, aturde al oponente con una sucesion de golpes en el centro oxipital izquierdo</p>
-		</div>
+    <!-- Productos ----------------------------------- -->
+    <section class="catalogo">
+        <div class="card">
+            <img class="imagen" src="{{ asset('imagenes/producto/arete01.jpg') }}" style="width: 100%" />
+            <h1 class="nombre">Waflitos</h1>
+            <p class="price">$299</p>
+            <p class="descripcion">Pack de 4 aretes con forma de wafles con moras y fresas</p>
+            <button class="boton">Añadir al carrito</button>
+        </div>
 
-		<div class="elemento">
-			<h2>Gato truste</h2>
-			<p class="type">[RTAP CARD]</p>
-			<img src="{{ asset('imagenes/Gatotruste.jpg') }}" />
-			<p class="description">Puedes activar esta carta cuando tu oponente active una carta trampa en su turno. Si
-				esta
-				carta es activada, aturde al oponente con una sucesion de golpes en el centro oxipital izquierdo</p>
-		</div>
+        <div class="card">
+            <img class="imagen" src="{{ asset('imagenes/producto/arete02.jpg') }}" style="width: 100%" />
+            <h1 class="nombre">Molcajetes</h1>
+            <p class="price">$299</p>
+            <p class="descripcion">Pack de 4 aretes con forma de wafles con moras y fresas</p>
+            <button class="boton">Añadir al carrito</button>
+        </div>
 
-	</section>
-	<!-- Productos ----------------------------------- -->
-	@endsection
-	
+        <div class="card">
+            <img class="imagen" src="{{ asset('imagenes/producto/arete03.jpg') }}" style="width: 100%" />
+            <h1 class="nombre">Sandías</h1>
+            <p class="price">$299</p>
+            <p class="descripcion">Pack de 4 aretes con forma de wafles con moras y fresas</p>
+            <button class="boton">Añadir al carrito</button>
+        </div>
+
+        <div class="card">
+            <img class="imagen" src="{{ asset('imagenes/producto/arete04.jpg') }}" style="width: 100%" />
+            <h1 class="nombre">Ranita</h1>
+            <p class="price">$299</p>
+            <p class="descripcion">Pack de 4 aretes con forma de wafles con moras y fresas</p>
+            <button class="boton">Añadir al carrito</button>
+        </div>
+
+        <div class="card">
+            <img class="imagen" src="{{ asset('imagenes/producto/arete05.jpg') }}" style="width: 100%" />
+            <h1 class="nombre">Limónes</h1>
+            <p class="price">$299</p>
+            <p class="descripcion">Pack de 4 aretes con forma de wafles con moras y fresas</p>
+            <button class="boton">Añadir al carrito</button>
+        </div>
+
+        <div class="card">
+            <img class="imagen" src="{{ asset('imagenes/producto/placeholder.jpg') }}" style="width: 100%" />
+            <h1 class="nombre">Nuevo</h1>
+            <p class="price">$0.00</p>
+            <p class="descripcion">Pack de 4 aretes con forma de wafles con moras y fresas</p>
+            <button class="boton">Añadir al carrito</button>
+        </div>
+    </section>
+    <!-- Productos ----------------------------------- -->
+@endsection
+
 </body>
 
 </html>

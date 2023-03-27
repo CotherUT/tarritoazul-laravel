@@ -13,7 +13,8 @@
                     </div>
                     <div class="descripcion">
                         <p>Descripcion:</p>
-                        <input name="tbDescripcion" class="input_descripcion" TextMode="MultiLine" value="{{ $i->descripcion }}"></input>
+                        <input name="tbDescripcion" class="input_descripcion" TextMode="MultiLine"
+                            value="{{ $i->descripcion }}"></input>
                         <br />
                     </div>
                 </div>
@@ -27,7 +28,8 @@
 
                     <div class="cantidad">
                         <p>Cantidad:</p>
-                        <input type="number" name="tbCantidad" class="input" TextMode="Number" Text="1" value="{{ $i->cantidad }}"></input>
+                        <input type="number" name="tbCantidad" class="input" TextMode="Number" Text="1"
+                            value="{{ $i->cantidad }}"></input>
                     </div>
 
                     <div class="disponibilidad">

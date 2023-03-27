@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        body{background-color: #f89230;}
+        body {
+            background-color: #f89230;
+        }
     </style>
 </head>
 

@@ -11,7 +11,8 @@
 @section('Contenido')
     <h1>Panel de control</h1>
     <h2>Productos</h2>
-    <button type="button" class="btn btn-primario" onclick="window.location='{{ route("Producto.create") }}'">Nuevo producto</button>
+    <button type="button" class="btn btn-primario" onclick="window.location='{{ route('Producto.create') }}'">Nuevo
+        producto</button>
     <br>
     <br>
     @if ($var_productos)

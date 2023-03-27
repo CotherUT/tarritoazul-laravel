@@ -38,7 +38,7 @@ class ProductoController extends Controller
             'etiquetas'=>request('tbEtiquetas')
         ]);    
 
-        return redirect()->route('/');
+        return redirect()->route('Dashboard.index');
     }
 
     /**
