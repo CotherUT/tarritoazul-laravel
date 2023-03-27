@@ -2,40 +2,40 @@
 
 @extends('Plantilla')
 @section('Contenido')
-<section>
-    <h1>Tarritoazul</h1>
-    <br>
-    <br>
-    <br>
-    <br>
-</section>
+    <section>
+        <h1>Tarritoazul</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
 
-<section class="informacion_contacto">
-    <div>
-        <img src="{{ asset('imagenes/contacto/telefono.gif') }}">
-        <p>(311)1234567</p>
-    </div>
-    <div>
-        <img src="{{ asset('imagenes/contacto/mensaje.gif') }}">
-        <p>contacto@tarritoazul.com</p>
-    </div>
-    <div>
-        <img src="{{ asset('imagenes/contacto/ubicacion.gif') }}"">
-        <p>Calle: notyourbusines #43.</p>
-        <p>Col. Junimo</p>
-    </div>
-</section>
+    <section class="informacion_contacto">
+        <div>
+            <img src="{{ asset('imagenes/contacto/telefono.gif') }}">
+            <p>(311)1234567</p>
+        </div>
+        <div>
+            <img src="{{ asset('imagenes/contacto/mensaje.gif') }}">
+            <p>contacto@tarritoazul.com</p>
+        </div>
+        <div>
+            <img src="{{ asset('imagenes/contacto/ubicacion.gif') }}"">
+            <p>Calle: notyourbusines #43.</p>
+            <p>Col. Junimo</p>
+        </div>
+    </section>
 
-<!-- Ubicacion en el mapa -->
-<section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div id="map"></div>
-</section>
-<!-- Post de facebook -->
-{{-- <section>
+    <!-- Ubicacion en el mapa -->
+    <section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="map"></div>
+    </section>
+    <!-- Post de facebook -->
+    {{-- <section>
     <br>
     <br>
     <br>
@@ -51,8 +51,8 @@
                 </blockquote>
     </div>
 </section> --}}
-<!-- Post de twitter -->
-{{-- <section>
+    <!-- Post de twitter -->
+    {{-- <section>
     <br>
     <br>
     <br>
@@ -66,19 +66,26 @@
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </section> --}}
 
-<script>
-    //Funcion para inicializar y colocar el mapa en la pagina
-    function initMap() {
-        //Declarar una variable que se le asigne la longitud y latitud de las oficinas de tarritoazul
-        var tarrito = { lat: 21.23970946747837, lng: - 104.90079329614177 };//Ubicacion de las oficinas de tarritoazul
-        //Declarar variable para ubicar tarritoazul
-        var map = new google.maps.Map(document.getElementById('map'), { zoom: 15, center: tarrito });
-        //Posicionar el marcador en el mapa
-        var marker = new google.maps.Marker({ position: tarrito, map: map });
-    }
-</script>
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS4fB3Wb8JS1lwkNBcUNKzvWMVTssyP4E&callback=initMap">
-
+    <script>
+        //Funcion para inicializar y colocar el mapa en la pagina
+        function initMap() {
+            //Declarar una variable que se le asigne la longitud y latitud de las oficinas de tarritoazul
+            var tarrito = {
+                lat: 21.23970946747837,
+                lng: -104.90079329614177
+            }; //Ubicacion de las oficinas de tarritoazul
+            //Declarar variable para ubicar tarritoazul
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: tarrito
+            });
+            //Posicionar el marcador en el mapa
+            var marker = new google.maps.Marker({
+                position: tarrito,
+                map: map
+            });
+        }
     </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS4fB3Wb8JS1lwkNBcUNKzvWMVTssyP4E&callback=initMap"></script>
 @endsection
